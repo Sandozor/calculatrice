@@ -18,10 +18,16 @@ namespace Calculatrice
             InitializeComponent();
         }
 
-        private void ClickBTN(object sender, EventArgs e)
+        private void CLICK_NUMBER(object sender, EventArgs e)
         {
-            Button btn = sender as Button;
-            string strbtnName = btn.Name;
+            Button btnNumber = sender as Button;
+            string strNumber = btnNumber.Name;
+        }
+
+        private void CLICK_OPERATION(object sender, EventArgs e)
+        {
+            Button btnOperation = sender as Button;
+            string strNuOperation = btnOperation.Name;
         }
     }
 }
