@@ -53,6 +53,7 @@ namespace Calculatrice
                 case "btnPoint": lblEcrire.Text += ".";
                     break;
                 case "btnFois": lblEcrire.Text += "*";
+                    break;
 
             }
         }
