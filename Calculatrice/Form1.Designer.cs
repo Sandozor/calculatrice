@@ -46,6 +46,7 @@
             this.btnEgale = new System.Windows.Forms.Button();
             this.lblEcrire = new System.Windows.Forms.Label();
             this.lblResultat = new System.Windows.Forms.Label();
+            this.btnFois = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCE
@@ -62,7 +63,7 @@
             // 
             this.btnPlus.Location = new System.Drawing.Point(230, 93);
             this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Size = new System.Drawing.Size(33, 36);
+            this.btnPlus.Size = new System.Drawing.Size(33, 18);
             this.btnPlus.TabIndex = 1;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
@@ -70,9 +71,9 @@
             // 
             // btnMoin
             // 
-            this.btnMoin.Location = new System.Drawing.Point(230, 135);
+            this.btnMoin.Location = new System.Drawing.Point(230, 117);
             this.btnMoin.Name = "btnMoin";
-            this.btnMoin.Size = new System.Drawing.Size(33, 36);
+            this.btnMoin.Size = new System.Drawing.Size(33, 29);
             this.btnMoin.TabIndex = 2;
             this.btnMoin.Text = "-";
             this.btnMoin.UseVisualStyleBackColor = true;
@@ -80,9 +81,9 @@
             // 
             // btnDiviser
             // 
-            this.btnDiviser.Location = new System.Drawing.Point(230, 177);
+            this.btnDiviser.Location = new System.Drawing.Point(230, 152);
             this.btnDiviser.Name = "btnDiviser";
-            this.btnDiviser.Size = new System.Drawing.Size(33, 30);
+            this.btnDiviser.Size = new System.Drawing.Size(33, 19);
             this.btnDiviser.TabIndex = 3;
             this.btnDiviser.Text = "/";
             this.btnDiviser.UseVisualStyleBackColor = true;
@@ -226,11 +227,22 @@
             this.lblResultat.TabIndex = 17;
             this.lblResultat.Text = "label1";
             // 
+            // btnFois
+            // 
+            this.btnFois.Location = new System.Drawing.Point(230, 177);
+            this.btnFois.Name = "btnFois";
+            this.btnFois.Size = new System.Drawing.Size(33, 27);
+            this.btnFois.TabIndex = 18;
+            this.btnFois.Text = "*";
+            this.btnFois.UseVisualStyleBackColor = true;
+            this.btnFois.Click += new System.EventHandler(this.CLICK_OPERATION);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.btnFois);
             this.Controls.Add(this.lblResultat);
             this.Controls.Add(this.lblEcrire);
             this.Controls.Add(this.btnEgale);
@@ -277,6 +289,7 @@
         private System.Windows.Forms.Button btnEgale;
         private System.Windows.Forms.Label lblEcrire;
         private System.Windows.Forms.Label lblResultat;
+        private System.Windows.Forms.Button btnFois;
     }
 }
 
