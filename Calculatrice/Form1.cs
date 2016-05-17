@@ -16,13 +16,15 @@ namespace Calculatrice
         public Form1()
         {
             InitializeComponent();
+            lblEcrire.Text = "";
+            lblResultat.Text = "";
         }
 
-        private void ClickBTN(object sender, EventArgs e)
+        private void CLICK_NUMBER(object sender, EventArgs e)
         {
-            Button btn = sender as Button;
-            string strbtnName = btn.Name;
-            switch (strbtnName)
+            Button btnNumber = sender as Button;
+            string strNumber = btnNumber.Name;
+            switch (strNumber)
             {
                 case "btn1": lblEcrire.Text += "1";
                     break;
@@ -44,9 +46,18 @@ namespace Calculatrice
                     break;
                 case "btn0": lblEcrire.Text += "0";
                     break;
+            }
+        }
+
+        private void CLICK_OPERATION(object sender, EventArgs e)
+        {
+            Button btnOperation = sender as Button;
+            string strOperation = btnOperation.Name;
+            switch (strOperation)
+            {
                 case "btnPlus": lblEcrire.Text += "+";
                     break;
-                case "btnMoins": lblEcrire.Text += "-";
+                case "btnMoin": lblEcrire.Text += "-";
                     break;
                 case "btnDiviser": lblEcrire.Text += "/";
                     break;
@@ -54,7 +65,6 @@ namespace Calculatrice
                     break;
                 case "btnFois": lblEcrire.Text += "*";
                     break;
-
             }
         }
     }
